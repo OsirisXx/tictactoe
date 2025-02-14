@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-image: url('https://img.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.square {
+  background: #2c3e50;
+  border: 2px solid #34495e;
+  float: left;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  width: 60px;
+  margin: 4px;
+  padding: 0;
+  text-align: center;
+  color: #ecf0f1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.square:hover {
+  background: #34495e;
+  transform: scale(1.05);
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  background: #34495e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+  text-align: center;
+  color: #ecf0f1;
+  padding: 10px 20px;
+}
+
+.player-x {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.player-o {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.draws {
+  color: #95a5a6;
+}
+
+.history-item {
+  margin: 8px 0;
+  list-style: none;
+}
+
+.history-button {
+  width: 100%;
+  padding: 10px 15px;
+  background: #34495e;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-button:hover {
+  background: #2c3e50;
+  transform: translateY(-2px);
+}
+
+.history-button.active {
+  background: #2980b9;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+}
+
+.game-info {
+  margin-left: 20px;
+  padding: 15px;
+  min-width: 150px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
