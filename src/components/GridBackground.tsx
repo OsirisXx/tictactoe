@@ -160,9 +160,9 @@ const GridBackground = () => {
 
     const updateCursor = (e: MouseEvent) => {
       const rect = container.getBoundingClientRect();
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-      createRipple(e.clientX, e.clientY);
+      cursor.style.left = `${e.clientX - rect.left}px`;
+      cursor.style.top = `${e.clientY - rect.top}px`;
+      createRipple(e.clientX - rect.left, e.clientY - rect.top);
     };
 
     window.addEventListener('mousemove', updateCursor);
