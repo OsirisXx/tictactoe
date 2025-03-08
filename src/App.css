@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  background: rgba(26, 26, 26, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.game-board {
+  margin-right: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(26, 26, 26, 0.9);
+  color: white;
+  border: 2px solid rgba(255, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;  /* Remove default padding */
+}
+
+.square:hover {
+  background: rgba(26, 26, 26, 1);
+  border-color: rgba(255, 0, 0, 0.4);
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.announcement {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #646cff;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-item {
+  margin: 5px 0;
+}
+
+.history-button.active {
+  background-color: #646cff;
+  color: white;
+}
+
+.game-info {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  /* Styling the scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 0, 0, 0.2) transparent;
+}
+
+.game-info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.game-info::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.game-info::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.game-info ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
